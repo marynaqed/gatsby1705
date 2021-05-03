@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* purgecss start ignore */
+body {
+  font-family: sans-serif;
+  margin: 0;
+}
+
+.gradient {
+  background: linear-gradient(90deg, #1d3557 0%, #7ad7da 100%);
+}
+
+/* all text orange classes have been removed in tailwind 2.0 */
+.text-orange-800 {
+  color: #9c4221;
+}
+
+/* 
+    CSS purge is removing some styles, this is a temp fix to solve this issue
+    I think this is a compatibility issues with tailwind 2.0+ bridge as gridsome
+    is able to compile tailwind 2.0+
+   */
+.ml-6 {
+  margin-left: 1.5rem;
+}
+
+.fixed {
+  position: fixed;
+}
+
+/* purgecss end ignore */
